@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Vacula</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<body>
+<div class="container-fluid">
+    <!-- Navigačné menu -->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Hlavná stránka</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="page1.html">Malorka</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="page2.html">Dubaj</a>
+        </li>
+    </ul>
+
+    <!-- Nadpis a text -->
+    <h1 style="color: #016AFF">F-Travel</h1>
+    <h5 style="color: #171717">Cestovná kancelária s dlhoročnými skúsenosťami</h5>
+    <p>Zažite s nami nezabudnuteľnú dovolenku. Vyberte si z našej ponuky zájazdov po Európe, ale aj exotické destinácie
+        ako napríklad Phuket v Thajsku alebo Zanzibar v Tanzánii.</p>
+    <!-- Odrazkovy zoznam -->
+    <h6>Prečo s nami?</h6>
+    <ul style="list-style-type:square;">
+        <li>Kvalitné, overené a moderné hotely</li>
+        <li>Spokojní klienti</li>
+        <li>Dlhoročná prax v oblasti CR</li>
+    </ul>
+    <!-- Cislovany zoznam -->
+    <h6>Ako objednať zájazd?</h6>
+    <ol type="1">
+        <li>Vyberte si z našej ponuky</li>
+        <li>Kontaktujte nás cez <a href="mailto:zajazdy@ftravel.sk">e-mail</a> alebo telefonicky na 0800 666 999</li>
+        <li>My zájazd overíme, dojednáme detaily a pošleme platobné inštrukcie.</li>
+        <li>Po prijatí platby zájazd potvrdíme.</li>
+    </ol>
+
+    <!-- Karty -->
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card" style="width: 25rem;">
+                <img src="images/mallorca.png" class="card-img-top" alt="Obrazok Malorka">
+                <div class="card-body">
+                    <h5 class="card-title">Malorka, Španielsko</h5>
+                    <p class="card-text">Navštívte jeden z najkrajších ostrovov v Európe. Pohodlne lietadlom za 2,5
+                        hodiny priamo z Bratislavy.</p>
+                    <a href="page1.html" class="btn btn-primary">Viac informácií</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card" style="width: 25rem;">
+                <img src="images/dubai.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dubaj, SAE</h5>
+                    <p class="card-text">Kozmopolitné mesto zaujme svojimi mrakodrapmi, moderným metrom, veľkými
+                        nákupnými centrami, ako aj relaxačnými plážami.</p>
+                    <a href="page2.html" class="btn btn-primary">Viac informácií</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card" style="width: 25rem;">
+                <img src="images/phuket.png" class="card-img-top" alt="Obrazok Phuket">
+                <div class="card-body">
+                    <h5 class="card-title">Phuket, Thajsko</h5>
+                    <p class="card-text">Krásne pláže s úžasným západom slnka. Neváhajte a vycestujte do raja na
+                        zemi.</p>
+                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPhuket">Termíny a cena</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card" style="width: 25rem;">
+                <img src="images/zanzibar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Zanzibar, Tanzánia</h5>
+                    <p class="card-text">Exotický ostrov pobrežia Tanzánie vás očarí nielen svojou exotickosťou,
+                        prírodou, podmorským svetom s množstvom koralov, ale aj prívetivosťou miestnych obyvateľov.</p>
+                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalZanzibar">Termíny a cena</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Phuket -->
+    <div class="modal fade" id="modalPhuket" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Phuket, Thajsko</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Tabuľka -->
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Termín</th>
+                            <th scope="col">Odlet</th>
+                            <th scope="col">Počet dní</th>
+                            <th scope="col">Cena</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>01.10. - 14.10.2022</td>
+                            <td>Viedeň</td>
+                            <td>14 dní</td>
+                            <td>od 3390€</td>
+                        </tr>
+                        <tr>
+                            <td>01.10. - 14.10.2022</td>
+                            <td>Praha</td>
+                            <td>14 dní</td>
+                            <td>od 3490€</td>
+                        </tr>
+                        <tr>
+                            <td>08.10. - 17.10.2022</td>
+                            <td>Budapešť</td>
+                            <td>10 dní</td>
+                            <td>od 2490€</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavrieť</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Zanzibar -->
+    <div class="modal fade" id="modalZanzibar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Zanzibar, Tanzánia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Tabuľka -->
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Termín</th>
+                            <th scope="col">Odlet</th>
+                            <th scope="col">Počet dní</th>
+                            <th scope="col">Cena</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>01.10. - 09.10.2022</td>
+                            <td>Viedeň</td>
+                            <td>9 dní</td>
+                            <td>od 2170€</td>
+                        </tr>
+                        <tr>
+                            <td>03.10. - 12.10.2022</td>
+                            <td>Viedeň</td>
+                            <td>10 dní</td>
+                            <td>od 2370€</td>
+                        </tr>
+                        <tr>
+                            <td>08.10. - 17.10.2022</td>
+                            <td>Viedeň</td>
+                            <td>10 dní</td>
+                            <td>od 2490€</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavrieť</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- Alert -->
+    <!-- Načítanie symbolu -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </symbol>
+    </svg>
+    <!-- alert -->
+    <div class="alert alert-danger d-flex align-items-center" role="alert">
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+            <use xlink:href="#exclamation-triangle-fill"/>
+        </svg>
+        <div>
+            Pozor! Aktuálne prebieha súťaž o poukaz na dovolenku v hodnote 1000€.
+            Stačí si objednať akýkoľvek zájazd a ste v hre.
+        </div>
+    </div>
+</div>
+<!-- Päta -->
+<footer class="bg-dark text-center text-white">
+    <div class="text-center p-3" style="background-color: #171717;">
+        © 2022 Copyright:
+        <p>
+            Filip Vacula<br>
+            SSOŠ Žilina<br>
+            2.A<br>
+            <a href="mailto:vacula1@ssosza.sk">vacula1@ssosza.sk</a>
+        </p>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
